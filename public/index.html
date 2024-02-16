@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        document.getElementById("pwycform").addEventListener("input", function () {
+          const priceCents = document.getElementById('price').value;
+          document.querySelector('#payButton').innerText = `Pay $${(price.value / 100).toFixed(2)}`
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+  <div class="flex items-center justify-center min-h-screen px-24">
+      <form class="grid gap-2" id="pwycform" action="/create-checkout-session" method="post">
+      <div class="space-y-2">
+        <h1 id="youPay" class="text-3xl font-bold tracking-tighter sm:text-4xl">Select an amount.</h1>
+      </div>  
+      <input 
+      type="range" 
+      id="price" name="price"
+      value="50" step="50" min="50" max="5000"
+    >
+          <button 
+            id="payButton" 
+            class="bg-red-500 hover:bg-lime-400 text-white font-bold py-2 px-4 border-b-4"
+          >
+            Use the slider above.
+          </button>
+      </form>
+  </div>
+
+  </body>
+</html>

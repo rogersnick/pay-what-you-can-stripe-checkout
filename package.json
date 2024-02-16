@@ -1,0 +1,17 @@
+{
+  "name": "stripe-pay-what-you-can",
+  "version": "1.0.0",
+  "description": "A sample Stripe implementation of a Pay What You Can checkout flow",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env.local server.js",
+    "build": "npm i"
+  },
+  "author": "rogersnick",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.17.1",
+    "stripe": "^13.0.0"
+  }
+}
