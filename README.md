@@ -31,7 +31,7 @@ Stripe Checkout is the fastest way to get started with payments. This template c
 
 `/public` - these files are served directly as is and contain no secret information
 
-- index.html_: The actual form that users will see which initiates a post to the backend. Change this to alter how you sales page appears
+- _index.html_: The actual form that users will see which initiates a post to the backend. Change this to alter how you sales page appears
 - _success.html_: Displayed to users upon a successful purchase
 - _winback.html_ - Displayed to users if they return from the purchase screen without completing a purchase
 
